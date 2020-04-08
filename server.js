@@ -7,9 +7,9 @@ let db;
 
 let port=process.env.PORT
 if(port==null||port==""){
-  port=3000;
+  port=3000;}
 //this will allow the access to the public folder from the root of server
-app.use(express.static('public'))
+app.use(express.static('public'));
 
 let connectionString="mongodb+srv://todoAppUser:Apoorv@100@cluster0-bjpqo.mongodb.net/TodoApp?retryWrites=true&w=majority";
  //b=> mongodb property
